@@ -1,24 +1,23 @@
 
+const cardsContainer = document.querySelector("#cards-container");
 
 
-    fetch('https://striveschool-api.herokuapp.com/books')
-     .then((response) => {
-     console.log('resolved',response);
-     return response.json();
-    })
-     .then(data => {
-      console.log(data);
-     })
+const populateBookResults = (books) => {
+  for (const books of books) {
+    const bookCardHtml = `<div class="col text-center">
+      <img class="img-fluid" src="${title.category.cover_small}" alt="${book.title.category}" />
+      
+    </div>`;
+
+  cardsContainer.innerHTML += bookCardHtml;
+  }
+}
+
+  
      
-     .catch((err) => {
-      console.log('rejected',err);
-     })
-    
-    
-
-     const cardsContainer = document.querySelector("#cards-container");
 
   function renderBooks(data) {
+  
     data.forEach(data => {
       const div = document.createElement('div');
       const image = document.createElement('img');
@@ -49,7 +48,29 @@
 
     });
 };
+console.log(renderBooks);
+console.log(cardsContainer)
 
 
+fetch('https://striveschool-api.herokuapp.com/books')
+.then((response) => {
+console.log('resolved',response);
+return response.json();
 
+})
+.then(data => {
+ console.log(data);
+})
+//.then(respone => {
+ // populateBookResults(respone.data);
+//})
+.catch((err) => {
+ console.log('rejected',err);
+})
+
+
+const populateBooks = (books) => {
+
+
+}
 
