@@ -1,5 +1,5 @@
 
-console.log('test')
+
 
     fetch('https://striveschool-api.herokuapp.com/books')
      .then((response) => {
@@ -9,10 +9,11 @@ console.log('test')
      .then(data => {
       console.log(data);
      })
+     
      .catch((err) => {
       console.log('rejected',err);
      })
-   
+    
     
 
      const cardsContainer = document.querySelector("#cards-container");
@@ -48,6 +49,7 @@ console.log('test')
 
     });
 };
-    
+
+
 
 
