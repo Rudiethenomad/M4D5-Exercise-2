@@ -61,16 +61,11 @@ return response.json();
 .then(data => {
  console.log(data);
 })
-//.then(respone => {
- // populateBookResults(respone.data);
-//})
+
 .catch((err) => {
  console.log('rejected',err);
 })
 
 
-const populateBooks = (books) => {
 
-
-}
 
