@@ -19,7 +19,7 @@ const populateBookResults = (data) => {
   function renderBooks(data) {
   
     data.forEach(data => {
-      const div = document.createClassName('cards-container');
+      const div = document.createId('bookCards-container');
       const image = document.createClassName('image');
       const title = document.createClassName('title');
       const price = document.createClassName('price');
@@ -29,11 +29,11 @@ const populateBookResults = (data) => {
       div.classList = 'card'
       image.classList = 'card-img'
       like.classList = 'empty'
-      image.src = books.image
+      image.src = data.image
       
-      title.innerText = `title: ${books.title}`
-      price.innerText = `price: ${books.price}`
-      category.innerText = `category: ${books.category}` 
+      title.innerText = `title: ${data.title}`
+      price.innerText = `price: ${data.price}`
+      category.innerText = `category: ${data.category}` 
      
       
       div.appendChild(title)

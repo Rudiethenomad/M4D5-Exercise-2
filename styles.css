@@ -4,6 +4,9 @@ body{
    margin-top: 30px;
 }
 
+
+
+/*shopping cart*/
 .card{
     height: 250px;
 }
@@ -224,4 +227,12 @@ p{
         font-family: 'Open Sans';
         font-weight: 600;
         color: #202020;
+    }
+
+
+    /*Card Deck*/
+
+    .card{
+        height: 500px;
+        width: 250px;
     }
