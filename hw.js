@@ -27,8 +27,8 @@ const populateBookResults = (data) => {
       const like = document.createClassName('like');
       const skip = document.createClassName('skip');
       div.classList = 'card'
-      image.classList = 'card-img'
-      like.classList = 'empty'
+      skip.button = 'empty'
+      like.button = 'empty'
       image.src = data.image
       
       title.innerText = `title: ${data.title}`
@@ -50,6 +50,19 @@ const populateBookResults = (data) => {
 };
 console.log(renderBooks);
 console.log(cardsContainer)
+
+/*
+const populateBookResults = (data) => {
+  for (data) {
+    const bookCardHtml = `<div class="col text-center">
+      <img class="img-fluid" src="${title.category.cover_small}" alt="${book.title.category}" />
+      
+    </div>`;
+
+  cardsContainer.innerHTML += bookCardHtml;
+  }
+}
+*/
 
 
 fetch('https://striveschool-api.herokuapp.com/books')
