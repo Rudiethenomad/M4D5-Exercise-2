@@ -87,22 +87,36 @@
   <!--Shopping Cart End-->
   <!--Book Cards-->
 
-<div id="bookCards-container">
-  <div class="card-deck">
-  <div class = row>
- 
-    <div class = title`>
-<div class="card">
 
-    <img class="image" src="hw.js">
-    <h3 class="title" src="hw.js">title</h3>
-    <h3 class="price" src="hw.js">price</h3>
-    <h3 class="category" src="hw.js">category</h3>
-    <button class="like">like</button>
-    <button class="skip">skip</button>
-
-  </div>
+  <div class="col-12 col-md-9 offset-md-3 mainPage">
+    <div class="row justify-content-center">
+      <div class="col-9 col-lg-11 mainLinks d-none d-md-flex">
+        <a id="rockSongsButton" href="#">ROCK</a>
+        <a id="popSongsButton" href="#">POP</a>
+        <a id="hipHopSongsButton" href="#">HIP HOP</a>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-10">
+        <div id="searchResults">
+          <h2 id="searchTitle"></h2>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="resultsContainer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div id="results" class="d-none">
+          <div class="spinner-border text-primary d-block m-auto" role="status" id="spinner">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 </div>
 </div>
