@@ -68,7 +68,7 @@ const populateBookResults = (data) => {
   addEventListener(window.onload);
     };
 
-const populateBookResults = (books) => {
+const populateBookResults = (data) => {
   for (const book of books) {
     const bookCardHtml = `<div class="col text-center">
     <img class="img-fluid" src="${title.book.cover_small}" alt="${title.book}" />
@@ -118,9 +118,11 @@ return response.json();
 .catch((err) => {
  console.log('rejected',err);
 
- addEventListener(window.onload)
+ 
 })
-
+.then(date => {
+  
+})
 
 
 //clone
