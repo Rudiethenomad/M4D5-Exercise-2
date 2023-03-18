@@ -16,7 +16,7 @@ const populateBookResults = (data) => {
 }
 */
   
-const BASE_URL = 'https://striveschool-api.herokuapp.com/books';  
+//const BASE_URL = 'https://striveschool-api.herokuapp.com/books';  
 
   //function renderBooks(data) {
   
@@ -31,33 +31,43 @@ const BASE_URL = 'https://striveschool-api.herokuapp.com/books';
       const like = document.getElementById('like');
       const skip = document.getElementById('skip');
 
-      /*
-      div.classList = 'card'
-      skip.button = 'empty'
-      like.button = 'empty'
-      image.src = data.image
       
-      title.innerText = `title: ${data.title}`
-      price.innerText = `price: ${data.price}`
-      category.innerText = `category: ${data.category}` 
-     
-      
-      div.appendChild(title)
-      div.appendChild(image)
-      div.appendChild(price)
-      div.appendChild(category)
-      div.appendChild(like)
-      div.appendChild(skip)
-      cardsContainer.appendChild(div)
-      like.textContent = 'like'
-      skip.textContent = 'Skip'
+      function renderBooks(data) {
+  
+        data.forEach(data => {
+          const div = document.createId('bookCards-container');
+          const image = document.createClassName('image');
+          const title = document.createClassName('title');
+          const price = document.createClassName('price');
+          const category = document.createClassName('category');
+          const like = document.createClassName('like');
+          const skip = document.createClassName('skip');
+          div.classList = 'card'
+          skip.button = 'empty'
+          like.button = 'empty'
+          image.src = data.image
+          
+          title.innerText = `title: ${data.title}`
+          price.innerText = `price: ${data.price}`
+          category.innerText = `category: ${data.category}` 
+         
+          
+          div.appendChild(title)
+          div.appendChild(image)
+          div.appendChild(price)
+          div.appendChild(category)
+          div.appendChild(like)
+          div.appendChild(skip)
+          cardsContainer.appendChild(div)
+          like.textContent = 'like'
+          skip.textContent = 'Skip'
+    
+        });
+    };
+    function load (){
+  addEventListener(window.onload);
+    };
 
-    });
-};
-console.log(renderBooks);
-console.log(cardsContainer)
-
-*/
 const populateBookResults = (books) => {
   for (const book of books) {
     const bookCardHtml = `<div class="col text-center">
@@ -79,9 +89,9 @@ const populateBookResults = (books) => {
 
 
 
-  classList.remove('d-none');
-  
-      Promise.all(bookPromises)
+  //classList.remove('d-none');
+  /*
+      Promise.all(books)
         .then((bookPromises) => {
           const book = bookPromisesResults.reduce((accumulator, currentObject) =>
             accumulator.concat(currentObject.data), []
@@ -91,7 +101,7 @@ const populateBookResults = (books) => {
         })
         .finally(() => results.classList.add('d-none'));
     
-
+*/
 
  // <------------------------------------>
 
@@ -107,9 +117,11 @@ return response.json();
 
 .catch((err) => {
  console.log('rejected',err);
+
+ addEventListener(window.onload)
 })
 
-*/
+
 
 //clone
 /*
